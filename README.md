@@ -11,7 +11,7 @@ Eventually...
 Do this.
 
 	.menu-bar {
-		.scrolled {
+		&.scrolled {
 			// magic
 		}
 	}
