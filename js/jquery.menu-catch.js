@@ -67,7 +67,7 @@ $( function() {
 			scrollPos = scrollPosBody;
 		}
 
-		// Add class scrolled if scroll position is larger than top margin
+		// Add scrolled class if scroll position is larger than top margin
 		if( scrollPos > marginTop ) {
 			$menu.addClass( scrolledClass );
 			$menu.addClass( animatedClass );
