@@ -17,4 +17,4 @@ Do this.
 	}
 
 ## How
-Read the code it's very simple and well documented.
+Read the code. It's very simple and well documented.
