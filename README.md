@@ -10,8 +10,15 @@ Eventually...
 ## Quick Start
 Do this.
 
+	$( '.menu-bar' ).menuCatch( 'scrolled', 'animated' );
+
+Then this.
+
 	.menu-bar {
 		&.scrolled {
+			// magic
+		}
+		&.animated {
 			// magic
 		}
 	}
