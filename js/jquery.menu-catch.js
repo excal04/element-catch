@@ -1,5 +1,5 @@
 // Menu Catch
-// November 12, 2014
+// November 13, 2014
 // The MIT License (MIT)
 // Copyright (c) 2014 Dustin Dowell
 // http://github.com/dustindowell22/menu-catch
@@ -12,7 +12,7 @@
 // + If you must animate the position of the menu use translate.
 
 
-(function ( $ ) {
+(function( $ ) {
 	$.fn.menuCatch = function( scrolledClass, animatedClass ) {
 
 		// ====================
@@ -28,7 +28,7 @@
 			}
 
 			// Animated class name
-			if( scrolledClass === undefined ) {
+			if( animatedClass === undefined ) {
 				animatedClass = 'animated';
 			}
 
