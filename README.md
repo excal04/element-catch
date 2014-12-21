@@ -16,7 +16,10 @@ Do this...
 ...or this.
 
   ```js
-  $('.menu-bar').menuCatch('my-scrolled-class-name', 'my-animated-class-name');
+  $('.menu').menuCatch({
+    scrolled: 'my-scrolled-class-name',
+    animated: 'my-animated-class-name'
+  });
   ```
 
 Then do something like this.
