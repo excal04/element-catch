@@ -10,31 +10,31 @@ A jQuery plugin that's intended to work with CSS to "catch" the navigation as th
 Do this...
 
   ```js
-    $('.menu-bar').menuCatch();
+  $('.menu-bar').menuCatch();
   ```
 
 ...or this.
 
   ```js
-    $('.menu-bar').menuCatch('my-scrolled-class-name', 'my-animated-class-name');
+  $('.menu-bar').menuCatch('my-scrolled-class-name', 'my-animated-class-name');
   ```
 
 Then do something like this.
 
   ```scss
-    .menu-bar {
-      margin-top: 32px;
-      transition: background-color 0.25s;
+  .menu-bar {
+    margin-top: 32px;
+    transition: background-color 0.25s;
 
-      &.scrolled {
-        margin-top: 0;
-        position: fixed;
-      }
-
-      &.animated {
-        background-color: #000;
-      }
+    &.scrolled {
+      margin-top: 0;
+      position: fixed;
     }
+
+    &.animated {
+      background-color: #000;
+    }
+  }
   ```
 
 
