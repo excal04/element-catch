@@ -1,27 +1,58 @@
 Menu Catch
 ==========
-jQuery plugin that's intended to work with CSS to catch the navigation as the page scrolls.
 
-CSS not included.
+A jQuery plugin that's intended to work with CSS to "catch" the navigation as the page scrolls.
 
-## Docs
-Eventually...
+
 
 ## Quick Start
-Do this.
 
-	$( '.menu-bar' ).menuCatch( 'scrolled', 'animated' );
+Do this...
 
-Then this.
+  ```js
+    $('.menu-bar').menuCatch();
+  ```
 
-	.menu-bar {
-		&.scrolled {
-			// magic
-		}
-		&.animated {
-			// magic
-		}
-	}
+...or this.
 
-## How
-Read the code. It's very simple and well documented.
+  ```js
+    $('.menu-bar').menuCatch('my-scrolled-class-name', 'my-animated-class-name');
+  ```
+
+Then do something like this.
+
+  ```scss
+    .menu-bar {
+      margin-top: 32px;
+      transition: background-color 0.25s;
+
+      &.scrolled {
+        margin-top: 0;
+        position: fixed;
+      }
+
+      &.animated {
+        background-color: #000;
+      }
+    }
+  ```
+
+
+
+## Using the "scrolled" Class
+
+Use the scrolled class for changing the top margin.
+
+Why?
+
+In order to check the original top margin and not the margin applied from the scrolled class, the scrolled class has to be temporarily removed to prevent the menu from getting stuck to the top of the window in the case that the scrolled class sets the top margin to 0.
+
+
+
+## Using the "animated" Class
+
+Use the animated class for applying transitions and animations.
+
+Why?
+
+This class is not temporarily removed like the scrolled class, so transitions and animations won't abruptly stop.

@@ -1,5 +1,8 @@
 ## Changelog
 
+December 21, 2014
++ Simplified everything
+
 November 12, 2014
 + Fixed animated class
 
