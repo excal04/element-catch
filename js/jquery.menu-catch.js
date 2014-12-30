@@ -1,5 +1,5 @@
 // Menu Catch
-// December 21, 2014
+// December 30, 2014
 // The MIT License (MIT)
 // Copyright (c) 2014 Dustin Dowell
 // http://github.com/dustindowell22/menu-catch
@@ -7,14 +7,13 @@
 
 (function($) {
   $.fn.menuCatch = function(options) {
-
     var settings = $.extend({
-      scrolled : 'scrolled',
-      animated : 'animated'
+      scrolled: 'scrolled',
+      animated: 'animated'
     }, options);
 
-    var $menu         = $(this),
-        marginTop     = null,
+    var $menu = $(this),
+        marginTop = null,
         scrollClasses = settings.scrolled + ' ' + settings.animated;
 
     function menuCatch() {
@@ -33,8 +32,6 @@
       return scrollPos > marginTop ? $menu.addClass(scrollClasses) : $menu.removeClass(scrollClasses);
     }
 
-    menuCatch();
-
-    $(window).on('scroll resize', menuCatch);
+    $(window).on('load scroll resize', menuCatch);
   };
 })(jQuery);

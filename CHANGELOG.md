@@ -1,4 +1,8 @@
-## Changelog
+Changelog
+==========
+
+December 30, 2014
++ Runs on page load
 
 December 21, 2014
 + Simplified everything
