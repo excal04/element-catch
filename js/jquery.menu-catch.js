@@ -1,7 +1,7 @@
-// Menu Catch
-// December 30, 2014
+// Menu Catch - 1.0.0
+// January 19, 2015
 // The MIT License (MIT)
-// Copyright (c) 2014 Dustin Dowell
+// Copyright (c) 2015 Dustin Dowell
 // http://github.com/dustindowell22/menu-catch
 
 
@@ -32,6 +32,8 @@
       return scrollPos > marginTop ? $menu.addClass(scrollClasses) : $menu.removeClass(scrollClasses);
     }
 
-    $(window).on('load scroll resize', menuCatch);
+    menuCatch();
+
+    $(window).on('scroll resize', menuCatch);
   };
 })(jQuery);

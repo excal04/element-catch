@@ -1,4 +1,4 @@
-Menu Catch
+Menu Catch - 1.0.0
 ==========
 
 A jQuery plugin that's intended to work with CSS to "catch" the navigation as the page scrolls.
