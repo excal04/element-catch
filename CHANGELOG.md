@@ -1,6 +1,10 @@
 Changelog
 ==========
 
+**February 8, 2015**
++ 1.0.1
+  + Split up and commented some variables
+
 **January 19, 2015**
 + 1.0.0
   + Executes during runtime
