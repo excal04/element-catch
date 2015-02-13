@@ -27,6 +27,7 @@ Then do something like this.
 ```scss
 .menu {
   margin-top: 32px;
+  position: absolute;
   transition: background-color 0.25s;
 
   &.scrolled {
