@@ -1,12 +1,16 @@
-// Menu Catch - 1.0.1
-// February 8, 2015
+// Menu Catch - 1.0.2
+// February 12, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // http://github.com/dustindowell22/menu-catch
+// =============================================
 
 
 (function($) {
   $.fn.menuCatch = function(options) {
+
+    // Store object
+    var $this = $(this);
 
     // Settings
     var settings = $.extend({
@@ -14,11 +18,8 @@
       animated: 'animated'
     }, options);
 
-    // Store object
-    var $this = $(this);
-
-    // Set scope
-    var marginTop;
+    // Initial top margin
+    var marginTop = parseFloat($this.css('margin-top'));
 
     // Concatenate classes
     var scrollClasses = settings.scrolled + ' ' + settings.animated;

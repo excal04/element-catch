@@ -1,6 +1,10 @@
 Changelog
 ==========
 
+**February 12, 2015**
++ 1.0.2
+  + Set inital top margin
+
 **February 8, 2015**
 + 1.0.1
   + Split up and commented some variables

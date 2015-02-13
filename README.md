@@ -1,4 +1,4 @@
-Menu Catch - 1.0.1
+Menu Catch - 1.0.2
 ==========
 
 A jQuery plugin that's intended to work with CSS to "catch" the navigation as the page scrolls.
@@ -9,36 +9,36 @@ A jQuery plugin that's intended to work with CSS to "catch" the navigation as th
 
 Do this...
 
-  ```js
-  $('.menu-bar').menuCatch();
-  ```
+```js
+$('#menu').menuCatch();
+```
 
 ...or this.
 
-  ```js
-  $('.menu').menuCatch({
-    scrolled: 'my-scrolled-class-name',
-    animated: 'my-animated-class-name'
-  });
-  ```
+```js
+$('#menu').menuCatch({
+  scrolled: 'my-scrolled-class-name',
+  animated: 'my-animated-class-name'
+});
+```
 
 Then do something like this.
 
-  ```scss
-  .menu-bar {
-    margin-top: 32px;
-    transition: background-color 0.25s;
+```scss
+.menu {
+  margin-top: 32px;
+  transition: background-color 0.25s;
 
-    &.scrolled {
-      margin-top: 0;
-      position: fixed;
-    }
-
-    &.animated {
-      background-color: #000;
-    }
+  &.scrolled {
+    margin-top: 0;
+    position: fixed;
   }
-  ```
+
+  &.animated {
+    background-color: #000;
+  }
+}
+```
 
 
 
