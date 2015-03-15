@@ -1,6 +1,15 @@
 Changelog
 ==========
 
+**March 15, 2015**
++ 1.0.3
+  + Name changed from `Menu Catch` to `Element Catch`
+  + Works on all elements no matter where they're placed
+  + Removed CSS dependence for distance checking
+  + No longer repeatedly checks for `scrolled` class
+  + Removed `animation` class because `scrolled` class is no longer periodically removed
+  + Changed the way arguments are passed because there is now only one argument
+
 **February 12, 2015**
 + 1.0.2
   + Set inital top margin
