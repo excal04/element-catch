@@ -1,5 +1,5 @@
-// Element Catch - 1.0.3
-// March 15, 2015
+// Element Catch - 1.0.4
+// March 19, 2015
 // The MIT License (MIT)
 // Copyright (c) 2015 Dustin Dowell
 // http://github.com/dustindowell22/element-catch
@@ -19,7 +19,7 @@
     var distanceTop = $this.offset().top;
 
     // Menu Catch
-    function menuCatch() {
+    function elementCatch() {
 
       // Scrollbar distance from top of document
       var scrollPosition = parseFloat($(document).scrollTop());
@@ -36,9 +36,9 @@
     }
 
     // Execute during runtime
-    menuCatch();
+    elementCatch();
 
     // Execute on resize
-    $(window).on('scroll resize orientationchange', menuCatch);
+    $(window).on('scroll resize orientationchange', elementCatch);
   };
 })($);

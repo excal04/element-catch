@@ -1,6 +1,10 @@
 Changelog
 ==========
 
+**March 19, 2015**
++ 1.0.4
+  + Internally named `elementCatch` instead of `menuCatch`
+
 **March 15, 2015**
 + 1.0.3
   + Name changed from `Menu Catch` to `Element Catch`
