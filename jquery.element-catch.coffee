@@ -3,7 +3,7 @@
 # The MIT License (MIT)
 # Copyright (c) 2015 Dustin Dowell
 # http:#github.com/dustindowell22/element-catch
-# =============================================
+# ==============================================
 
 
 (($) ->
@@ -19,7 +19,7 @@
     elementCatch = ->
 
       # Scrollbar distance from top of document
-      scrollPosition = $(document).scrollTop();
+      scrollPosition = $(document).scrollTop()
 
       # Add class if scroll position is larger than distance from top of document
       if scrollPosition > distanceTop
