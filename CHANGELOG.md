@@ -1,6 +1,10 @@
 Changelog
 ==========
 
+**March 20, 2015**
++ 1.0.5
+  + Rewritten using CoffeeScript
+
 **March 19, 2015**
 + 1.0.4
   + Internally named `elementCatch` instead of `menuCatch`

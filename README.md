@@ -1,4 +1,4 @@
-Element Catch - 1.0.4
+Element Catch - 1.0.5
 ==========
 
 A jQuery plugin that catches an element as the page scrolls.
