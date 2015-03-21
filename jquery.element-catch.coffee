@@ -36,4 +36,5 @@
 
     # Don't break the chain
     return this
+
 ) jQuery
