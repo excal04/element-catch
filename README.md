@@ -1,36 +1,34 @@
-Element Catch - 1.0.5
+Element Catch - 1.0.6
 ==========
 
 A jQuery plugin that catches an element as the page scrolls.
-
 
 
 ## Quick Start
 
 Do this and style your selector with the `.scrolled` class...
 
-```js
-$('#menu').elementCatch();
+```coffeescript
+$('#menu').elementCatch()
 ```
 
 ...or define your own class name...
 
-```js
-$('#menu').elementCatch('my-scrolled-class-name');
+```coffeescript
+$('#menu').elementCatch('my-scrolled-class-name')
 ```
 
 ...then add some styles.
 
 ```scss
 .menu {
+  width: 100%;
   transform: translateY(32px);
   position: absolute;
-  transition: background-color 0.25s;
 
   &.scrolled {
     transform: translateY(0);
     position: fixed;
-    background-color: #000;
   }
 }
 ```

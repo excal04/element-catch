@@ -1,40 +1,37 @@
-# Element Catch - 1.0.5
-# March 20, 2015
+# Element Catch - 1.0.6
+# June 20, 2015
 # The MIT License (MIT)
 # Copyright (c) 2015 Dustin Dowell
-# http:#github.com/dustindowell22/element-catch
+# github.com/dustindowell22/element-catch
 # ==============================================
 
 
 (($) ->
-  $.fn.elementCatch = (scrolledClass = 'scrolled') ->
+  $.fn.elementCatch = (scrollClass = 'scrolled') ->
 
-    # Cache object
+    # Cache this object
     $this = $(this)
 
     # Distance from top of document
     distanceTop = $this.offset().top
 
-    # Element Catch
-    elementCatch = ->
+    # Self-initiating Element Catch
+    do elementCatch = ->
 
       # Scrollbar distance from top of document
       scrollPosition = $(document).scrollTop()
 
       # Add class if scroll position is larger than distance from top of document
       if scrollPosition > distanceTop
-        if not $this.hasClass(scrolledClass)
-          $this.addClass(scrolledClass)
+        if not $this.hasClass(scrollClass)
+          $this.addClass(scrollClass)
       else
-        $this.removeClass(scrolledClass)
-
-    # Call during runtime
-    elementCatch()
+        $this.removeClass(scrollClass)
 
     # Call on events
     $(window).on('scroll resize orientationchange', elementCatch)
 
-    # Don't break the chain
+    # Allow chaining
     return this
 
 ) jQuery

@@ -1,6 +1,10 @@
 Changelog
 ==========
 
+**June 20, 2015**
++ 1.0.6
+  + Self-initiating `elementCatch` function
+
 **March 20, 2015**
 + 1.0.5
   + Rewritten using CoffeeScript
