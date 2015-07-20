@@ -1,5 +1,7 @@
-Element Catch - 1.0.6
+elem-catch.js
 ==========
+
+Plugin written in CoffeeScript converted to JS just cuz :). Inspired by [this](https://github.com/dustindowell22/element-catch)
 
 A jQuery plugin that catches an element as the page scrolls.
 
