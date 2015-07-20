@@ -17,12 +17,18 @@ function elementCatch(scrolledClass) {
         $this.classList.remove(scrolledClass);
     }
 
-
+    window.onscroll = function() {
+        $this.elementCatch();
+    }
 
     return this;
 }
+
+// sample testing:
+// var elem = document.querySelector('.menu');
+// elem.elementCatch();
+
+
+// observations:
+// cannot catch 2 elements at the same time
 //
-// window.onscroll = function(ev) {
-//     var elem = document.querySelector(".menu");
-//     elem.elementCatch();
-// }
